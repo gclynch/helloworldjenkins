@@ -6,10 +6,11 @@
 
 apply plugin: 'java'						// java source sets (main and test) and compilation/testing/javadoc/bundling into JAR tasks
 // brings in tasks:
-// compileJava - just compile using javac
+// compileJava - compile using javac src/main/java (main source set)
+// compileTestJava - compile using javac src/test/java
 // jar - assemble the jar
 // test - runs unit tests
-// javadoc - generates javadoc
+// javadoc - generates javadoc for main classes
 // build - build whole application
 // clean - remove build directories
 
@@ -17,14 +18,16 @@ apply plugin: 'java'						// java source sets (main and test) and compilation/te
 // test source set - unit tests
 
 apply plugin: 'application'					// executable JVM application
+// build/distributions folder contains TAR and ZIP + OS scripts to run as a result of build above
 // run - run the application
+
 
 // other plugins for scala, groovy, python etc.
 
 mainClassName = 'hello.HelloWorld'			// customise property for application plug-in
 
 // script block (Groovy) - customise jar object added by java plug-in
-// optional step to specify explicit name for executable JAR (i.e.containing main class) in JAR's Manifest 
+// optional step to specify explicit name for executable JAR (i.e. containing main class) in JAR's Manifest 
 // using semantic versioning major.minor.patch
 jar {
     baseName = 'helloworld'
@@ -43,8 +46,7 @@ repositories {
 
 // script block
 dependencies {
-    compile "joda-time:joda-time:2.9.4"		// JODA jar, format for dependencies is group-id:artifcat-id:version
-	compile "junit:junit:4.12"				// unit tests
+    compile "joda-time:joda-time:2.10"		// JODA jar, format for dependencies is group-id:artifcat-id:version
 }
 
 // can also publish artifcats in Maven repo
