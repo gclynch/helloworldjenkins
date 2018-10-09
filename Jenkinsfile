@@ -15,7 +15,7 @@ pipeline {
 		}
 		stage('run') { 
             steps {
-				echo 'hello world java checked out stage'
+				echo 'hello world java run stage'
                 sh './gradlew run'
             }
         }
