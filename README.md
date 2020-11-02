@@ -1,0 +1,2 @@
+
+[![Build Status](https://dev.azure.com/gclynch/helloworldjavaCI/_apis/build/status/helloworldjavaCI-YAML?branchName=master)](https://dev.azure.com/gclynch/helloworldjavaCI/_build/latest?definitionId=17&branchName=master)
