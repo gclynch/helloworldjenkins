@@ -30,29 +30,29 @@ plugins {
 
 // add support for 3rd party JARs in jCenter central repository e.g. JODA
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
     // dependency is used by the application
-    implementation 'com.google.guava:guava:28.2-jre' 
+    implementation 'com.google.guava:guava:30.1.1-jre' 
 
     // JUnit
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
     
     // joda date and time JAR, format for dependencies is group-id:artifcat-id:version
-    implementation "joda-time:joda-time:2.10.5" 
+    implementation "joda-time:joda-time:2.10.10" 
 }
 
 application {
     // Define the main class for the application
-    mainClassName = 'hello.HelloWorld'
+    mainClass.set("hello.HelloWorld")
 }
 
 
 // can also publish artifcats in jCenter or Maven or Ivy repo
 
-// need to add gradle wrapper for builds on Azure Pipelines etc. - done by init taks
+// need to add gradle wrapper for builds on Azure Pipelines etc. - done by init tasks
 // adds gradlew, gradlew.bat, gradle/wrapper/gradle-wrapper.jar, gradle/wrapper/gradle-wrapper.properties
 
 // the "application" plug-in creates distributions (i.e. tar for Unix and zip for Windows containing run scripts and jars and dependencies)
