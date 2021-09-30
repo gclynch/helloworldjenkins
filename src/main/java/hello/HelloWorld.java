@@ -30,7 +30,7 @@ public class HelloWorld
 
 build/classes			java/main/HelloWorld.class
 build/reports			unit test results (if any)
-build/libs				helloworld-1.0.1.jar
+build/libs				helloworld.jar
 
 gradle uses DAG to determine tasks to be completed before specified task
 e.g. gradle run will do a build if source code has changed
