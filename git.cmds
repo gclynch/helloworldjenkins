@@ -1,7 +1,7 @@
 git init
 git add *
 git commit - m "initial commit"
-git remote add origin https://gclynch.visualstudio.com/_git/helloworldjavaCI
+git remote add origin https://github.com/gclynch/helloworldjava
 git push origin master
 git commit -a - m "git cmds"
 
