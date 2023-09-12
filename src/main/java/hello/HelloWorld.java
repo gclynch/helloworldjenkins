@@ -16,7 +16,7 @@
 package hello;
 
 
-import org.joda.time.LocalTime;					// JODA 3rd party library 2.10.1
+import org.joda.time.LocalTime;					// JODA 3rd party library 2.12.5
 
 
 public class HelloWorld
@@ -38,6 +38,6 @@ e.g. gradle run will do a build if source code has changed
 
 preferred way to build using gradle is via the gradle wrapper which does not require gradle install (e.g. CI/CD) on build machine
 run "gradle wrapper" to install script which can be used to build and check script into version control
-run "gradelw build" to build using wrapper script
+run "gradlew build" to build using wrapper script
 targets specific gradle version
 */

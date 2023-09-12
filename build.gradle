@@ -52,7 +52,7 @@ application {
 
 // can also publish artifcats in jCenter or Maven or Ivy repo
 
-// need to add gradle wrapper for builds on Azure Pipelines etc. - done by init tasks
+// need to add gradle wrapper for builds on GitHub actions, Azure Pipelines etc. - done by init tasks
 // adds gradlew, gradlew.bat, gradle/wrapper/gradle-wrapper.jar, gradle/wrapper/gradle-wrapper.properties
 
 // the "application" plug-in creates distributions (i.e. tar for Unix and zip for Windows containing run scripts and jars and dependencies)
