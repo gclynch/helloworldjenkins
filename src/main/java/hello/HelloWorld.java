@@ -23,7 +23,7 @@ public class HelloWorld
 {
 	public static void main(String[] args)
 	{
-		System.out.println("hello world Gradle  - the current time is " + new LocalTime());
+		System.out.println("hello world Gradle  - time is " + new LocalTime());
 	}
 }
 
