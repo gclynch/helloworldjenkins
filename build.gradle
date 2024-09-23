@@ -35,13 +35,13 @@ repositories {
 
 dependencies {
     // dependency is used by the application
-    implementation 'com.google.guava:guava:32.1.2-jre' 
+    implementation 'com.google.guava:guava:33.3.0-jre' 
 
     // JUnit
     testImplementation 'junit:junit:4.13.2'
     
     // joda date and time JAR, format for dependencies is group-id:artifcat-id:version
-    implementation "joda-time:joda-time:2.12.5" 
+    implementation "joda-time:joda-time:2.13.0" 
 }
 
 application {
