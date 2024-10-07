@@ -10,6 +10,6 @@ public class HelloWorldTest
     @Test
     public void testAdd() throws Exception 
 	{
-        assertEquals(2, 1 + 1);
+        assertEquals(3, 2 + 1);
     }
 }
