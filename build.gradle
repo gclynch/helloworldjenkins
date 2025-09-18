@@ -5,7 +5,7 @@
 // plug-ins adds pre-configured tasks to script i.e. java, application
 
 // use gradle init to generate build.gradle initially
-// will install gradle wrapper first
+// install gradle wrapper first
 
 plugins {
     id 'java'    
